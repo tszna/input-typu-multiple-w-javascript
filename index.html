@@ -1,0 +1,35 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="style.css">
+ <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+ <script src="script.js"></script>
+ </head>
+ <body>
+   <div class="wrapper">
+     <h2>Multiwybór</h2>
+     <p>Kliknij w okno i wybierz pozycje z listy.</p>
+ 
+     <div class="dropdown">
+       <div class="clearable">
+         <input onclick="dropDown()" id="data" class="drop" autocomplete="off" type="text" class="no-outline" name="text" placeholder="Wybierz kraj"/>
+          <span class="clear" id="clear" onclick="clearField()" style='font-size:20px;' title="select"><i class="far fa-times-circle"></i></span>
+       </div>
+       <div id="myDropdown" class="dropdown-content" onclick="selectRow()">
+           <table>
+             <tbody class="rows">
+               <tr><td>USA</td></tr>
+               <tr><td>UAE</td></tr>
+               <tr><td>PAK</td></tr>
+               <tr><td>IND</td></tr>
+               <tr><td>AFG</td></tr>
+               <tr><td>NZ</td></tr>
+               <tr><td>WI</td></tr>
+             </tbody>          
+           </table>
+       </div>
+      </div>
+    </div>
+ </body>
+ </html>
